@@ -1,0 +1,15 @@
+{
+  "name": "prime-sovereign-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for Prime Sovereign Listings",
+  "main": "lead-capture.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "stripe": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

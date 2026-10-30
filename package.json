@@ -1,0 +1,20 @@
+{
+  "name": "prime-sovereign-outreach",
+  "version": "1.0.0",
+  "description": "Automated outreach engine for Prime Sovereign Listings — local AI, zero GPU",
+  "main": "outreach-engine.js",
+  "scripts": {
+    "outreach": "node outreach-engine.js",
+    "outreach:daily": "node outreach-engine.js >> outreach/log-$(date +%F).log 2>&1",
+    "test:dm": "node -e \"require('./outreach-engine.js').generateDM({name:'Test',brokerage:'Test',location:'Atlanta',recent_listing:'123 Main'}, 'instagram-dm').then(console.log)\""
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
+    "stripe": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Marcus & Kemet",
+  "license": "Private"
+}
